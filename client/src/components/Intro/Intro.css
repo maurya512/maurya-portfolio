@@ -13,3 +13,59 @@
 .intro-right {
   flex: 1;
 }
+
+/* intro left wrapper */
+.intro-left-wrapper {
+  padding: 50px;
+}
+
+/* styling for header */
+.intro-header {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* styling for name */
+.intro-name {
+  font-size: 60px;
+}
+
+/* stylinf for title */
+.intro-title {
+  height: 50px;
+  /* only showcases 1 title for a height of 50 px */
+  overflow: hidden;
+}
+
+/* styling for title-item */
+.intro-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f64c72;
+  /* center the text to the container */
+  display: flex;
+  align-items: center;
+}
+
+/* wrapper animation */
+.intro-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  /* 4 title items after a default web developer title and so we divide the items by 4 */
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
