@@ -1,0 +1,35 @@
+/*! to target a particular component in the and scroll to it */
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  display: flex;
+  /*! places everything in a vertical manner */
+  flex-direction: column;
+  /*! limit the width to 70% on larger screens to give it an asthetic look*/
+  width: 70%;
+  /*! places margin on both sides, placing the home component at the center */
+  margin: auto;
+  /*! an easy way to check spacing on clear screen is to apply background color to it */
+   /* background-color: red; */
+}
+
+/*! media queries to get mobile responsiveness */
+/** tablet devices */
+@media only screen and (max-width: 1024px) {
+    /*! entire home component covers 90% of the screen */
+  .home {
+    width: 90%;
+  }
+}
+
+/** mobile devices*/
+@media only screen and (max-width: 512px) {
+  .home {
+      /*! entire home component covers 100% of the screen */
+    width: 100%;
+  }
+}
+
+
