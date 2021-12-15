@@ -1,7 +1,7 @@
 /* ! styling the header */
 .header {
   display: flex;
-  background-color: sienna;
+  /* background-color: sienna; */
   /*! spaces the content in the header component to the extreme end */
   justify-content: space-between;
   flex: 1;
@@ -13,7 +13,7 @@
 
 /* ! styling the menu */
 .menu {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -42,3 +42,18 @@
 }
 
 /* ! mobile responsiveness using media queries */
+/* ! styling for devices less than 1024px */
+@media only screen and (max-width: 720px) {
+  /* when the screen hits 720px display the mobile menu */
+  .mobile-menu {
+    display: flex;
+  }
+  /* when the screen hits 720px hide the web menu */
+  .web-menu {
+    display: none;
+  }
+  /* change the font size of the logo */
+  .logo {
+      font-size: 24px;
+  }
+}

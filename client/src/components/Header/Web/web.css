@@ -1,0 +1,32 @@
+/* styling the web content of the header */
+.web {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.web-options {
+  font-size: 20px;
+  margin-right: 16px;
+  font-weight: 700;
+}
+
+.web-options a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+/* fix the original position of the header menu */
+.option-icon {
+  display: flex;
+  align-items: center;
+  /* spacing between the icons and the menu items */
+  margin: 4px;
+}
+
+/* remove the extra margin from the last web option */
+.option-icon:last-child {
+  margin: 0px;
+}
