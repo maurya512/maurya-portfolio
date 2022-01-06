@@ -1,12 +1,22 @@
-import './App.css';
-import Home from './components/Home/Home';
-// import Intro from './components/Intro/Intro';
+// ! import components
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Contact from "./components/Contact/Contact";
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Intro />  */}
-      <Home />
+      {/* ! all the components go in order here */}
+      <Navbar />
+      <About />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <Contact />
     </div>
   );
 }
