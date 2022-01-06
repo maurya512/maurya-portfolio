@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from 'react'
-import { projects } from '../data';
+import { projects } from '../data/projectData';
 
 // component where we will display the projects
 // it will have the title of the project, the tech stack used and a link to the app (if deployed)
